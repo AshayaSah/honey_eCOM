@@ -4,56 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honey Haven</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="logo.png" alt="Honey Haven Logo">
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="cart.html">Cart</a>
-            </div>
+        <h1>Welcome to Honey Haven</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-banner">
-            <div class="banner-content">
-                <h1>Welcome to Honey Haven</h1>
-                <p>Discover the finest honey varieties, straight from the hive to your table.</p>
-                <a href="#products" class="shop-now-btn">Shop Now</a>
-            </div>
-        </section>
+    <section class="honey-details">
+        <h2>Our Honey Collection</h2>
+        <p>Explore our wide range of pure and natural honey...</p>
+    </section>
 
-        <section id="products" class="products-container">
-            <h2>Our Honey Collection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="honey_1.jpg" alt="Wildflower Honey">
-                    <h3>Wildflower Honey</h3>
-                    <p class="price">$15.99</p>
-                    <p class="description">A delightful mix of wildflowers, perfect for your tea or toast.</p>
-                    <button onclick="addToCart('Wildflower Honey')">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="honey_1.jpg" alt="Clover Honey">
-                    <h3>Clover Honey</h3>
-                    <p class="price">$12.99</p>
-                    <p class="description">Sweet and light, ideal for sweetening your favorite recipes.</p>
-                    <button onclick="addToCart('Clover Honey')">Add to Cart</button>
-                </div>
-                <!-- Add more product cards as needed -->
-            </div>
-        </section>
-    </main>
+    <section class="product-cards">
+        <div class="card">
+            <img src="honey1.jpg" alt="Honey Type 1">
+            <h3>Wildflower Honey</h3>
+            <p>Rich and aromatic.</p>
+            <button onclick="addToCart('Wildflower Honey')">Add to Cart</button>
+        </div>
+        <!-- More product cards -->
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Honey Haven. All rights reserved.</p>
-    </footer>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
